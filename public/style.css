@@ -1,0 +1,157 @@
+
+body {
+    font-family: 'Martel', serif;
+    /*background: linear-gradient(98deg, #00feba, #bbb2f7);*/
+    margin: 0;
+    padding: 0;
+    /* Vertically center content */
+    
+    background: linear-gradient(to right top, #D8B4F8, #CAEDFF,#75C2F6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center; 
+    
+    overflow: auto;
+    padding: 30px;
+    align-items: center; /* Center the card horizontally and vertically */
+    box-sizing: border-box;
+}
+
+.card {
+    width: 40%;
+     /* Adjust the height as needed */
+    background-image: url("./images/download.jpg");
+    height: 100%;
+    padding: 20px;
+  /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;   
+   border: 0;
+   outline: 0;
+   border-radius: 10px;
+   
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    padding: 20px ;
+}
+.search input{
+    flex: 1;
+    border: 0;
+    min-width: 80px;
+    margin-right: 20px;
+    height: 40px;border-radius: 20px;
+    font-size: 20px;
+}
+/* Change the border color when the input is focused */
+.search input:focus {
+     /* Change to your desired color */
+    outline-color: #a3e1d1;
+    
+    outline-style: double;
+
+}
+.search input[type="text"]{
+    padding: 10px 20px;
+    
+}
+.search button{
+    flex-shrink: 0;
+    flex-basis: 40px;outline: 0;
+    height: 40px;text-align: center;border: 0;
+    border-radius: 50%;
+    display: flex;align-items: center;justify-content: center;
+}
+.weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    color: rgb(255, 255, 255);
+    
+}
+.weather p{
+    white-space: nowrap;
+    font-size: 3vw;
+
+}
+.conditioin{
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    height: 200px;
+}
+.conditioin .humidity,.conditioin .wind-speed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+@keyframes slideIn {
+    0% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1);
+      opacity: 1;
+    }
+  }
+  
+  .text-animation {
+    display: inline-block;
+    animation: slideIn 2s ease-out forwards;
+    margin:30px 10px;
+    text-align: center;
+  }
+  
+@media(max-width:810px){
+    .card{
+        padding: 0;
+        margin: 0;
+       
+        width: 100%;
+    }
+}
+
+.animate-charcter
+{ 
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s ease-out infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

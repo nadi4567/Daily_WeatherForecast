@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warn</title>
+    <style>
+        body{
+            background-image: url("./images/Images Festival 2023.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            margin: 0;padding: 40px;
+            box-sizing: border-box;
+            background-position-x: center;
+            color: rgb(251, 251, 251);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .about-container{
+            padding: 30px;
+            border-radius: 10px;
+            outline-style: groove;
+            outline-width: 0.003px;
+            outline-color: rgb(201, 198, 189);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 550px;
+            color: rgb(4, 4, 4);
+        }
+        .about-container button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background: linear-gradient(to right top, #aff7e4, #a9a3d3);
+            border: 0;
+            outline: 0;
+        }
+        .about-container button a{
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>Warning</h1>
+        <h3>
+            Although you typed right city Name or country name , it shows invalid city Name.
+            It is because of the Weather API works.Please be sure you typed in exact name.
+            .For example,Typed New York instead of newyork.(OR) If you got  unauthorizeerror 401
+            ,it is because API key that I put for this app.😍
+        </h3>
+       
+        <em style="color:rgb(252, 252, 5) ;">Click Button below, to go home page</em>
+        <a href="/"><button type="submit">Home</button></a>
+    </div>
+</body>
+</html>

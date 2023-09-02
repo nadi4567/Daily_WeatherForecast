@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            background-image: url("./images/about.jpg");
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            margin: 0;padding: 40px;
+            box-sizing: border-box;
+            background-position-x: center;
+            color: rgb(251, 251, 251);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .about-container{
+            padding: 30px;
+            border-radius: 10px;
+            outline-style: groove;
+            outline-width: 0.003px;
+            outline-color: rgb(201, 198, 189);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .about-container button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background: linear-gradient(to right top, #aff7e4, #a9a3d3);
+            border: 0;
+            outline: 0;
+        }
+        .about-container button a{
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .about-container em{
+            color: rgb(244, 244, 118);
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>About App</h1>
+        <h3>
+            This is the Weather Forecast App.
+            Type City Name or Country to know the Weather condition.
+        </h3>
+        <h3>
+            If invalid names, Error message responsed.
+        </h3>
+        <em>Click Button below, to go home page</em>
+        <a href="/"><button type="submit">Home</button></a>    </div>
+</body>
+</html>
