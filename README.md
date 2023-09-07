@@ -7,3 +7,5 @@ To clone my repo => git clone https://github.com/nadi4567/
 After cloning, you need to install npm packages => npm install 
 
 To start , run => node index.js
+
+Here's my app, I deployed on render.com => https://daily-weatherforecast.onrender.com/
