@@ -9,3 +9,6 @@ After cloning, you need to install npm packages => npm install
 To start , run => node index.js
 
 Here's my app, I deployed on render.com => https://daily-weatherforecast.onrender.com/
+
+WARNING   ====> There's a warning which is that it can take some times to weather response to you from time to time cuz of the limit of weather API I used.
+If you got nothing , this is no because of code error , it just because of the API limit of may be API key expired.
