@@ -70,14 +70,14 @@ app.post("/", async(req,res)=>{
         res.redirect("/error");
         
         //res.status(429).send('Too many request.You may try after some time. 😿');
-      } else if (err.response.data.cod === "401") {
+      } else if (err.message === "Request failed with status code 401") {
         errorData= {
            err: "Unauthorize! Sorry,can't access with invalid API key. 😵‍💫"
 
         }
         res.redirect("/error");
         //res.status(401).send("Unauthorize! Sorry,can't access with invalid API key. 😵‍💫");
-      } else if(err.response.data.cod === "404"){
+      } else if(err.message === "Request failed with status code 404"){
         errorData = {
             err:"OOPS!Invalid City.Please Enter the exact Loation."
         }
